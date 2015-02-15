@@ -66,6 +66,7 @@ data_set <- rename(data_set, activity=activity_name)
 id <- c("activity", "subject")
 data_set_names <- names(data_set) 
 measure.vars <- data_set_names[! data_set_names %in% id]
+library(reshape2)
 melt_data_set <- melt(data_set, id=id, measure.vars = measure.vars)
 average_data_set <- dcast(melt_data_set, activity + subject ~ variable, mean)
 write.table(average_data_set, file = tidy_file_path, row.names = FALSE)
