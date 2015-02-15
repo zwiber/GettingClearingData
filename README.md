@@ -21,7 +21,7 @@ The tidy data set was generated in the file [tidy_data_set.txt](https://github.c
 
 ## The instruction list 
 
-The repository has a file run_analysis.R in the main directory that can be run as long as the Samsung data is in the R working directory.
+The repository has a file [run_analysis.R](https://github.com/zwiber/GettingClearingData/blob/master/run_analysis.R) in the main directory that can be run as long as the Samsung data is in the R working directory.
 
 The script does the following : 
 
@@ -42,74 +42,74 @@ The raw data represents data collected from the accelerometers from the Samsung 
 
 ### Code book
 
-|VARIABLES			|DESCRIPTION										       	|UNIT					|
-| - - - - - - - - - - - - - - - |: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - — - - - - — - - - - - - - - - :| — - - - - - - - - - - - - - - - - - -:|
-|”activity"			|The measured activity (LAYING,SITTING,STANDING,WALKING,WALKING_DOWNSTAIRS,WALKING_UPSTAIRS)   	|                 			|
-|”subject"       		|The volunteer’s number between 1 to 30 for the experiments              		       	|					|		
-|”tBodyAcc.mean...X"     	|Mean value of the body acceleration signals in the X direction      			       	|metre per second squared (m/s2)	|
-|”tBodyAcc.mean...Y"     	|Mean value of the body acceleration signals in the Y direction    			       	|metre per second squared (m/s2)	|
-|”tBodyAcc.mean...Z"    	|Mean value of the body acceleration signals in the Z direction     			       	|metre per second squared (m/s2)	|
-|”tBodyAcc.std...X"      	|Standard deviation of the body acceleration signals in the X direction      		       	|metre per second squared (m/s2)	|
-|”tBodyAcc.std...Y"      	|Standard deviation of the body acceleration signals in the Y direction     		       	|metre per second squared (m/s2)	|
-|”tBodyAcc.std...Z"      	|Standard deviation of the body acceleration signals in the Z direction    		       	|metre per second squared (m/s2)	|
-|”tGravityAcc.mean...X"		|Mean value of the gravity acceleration signals in the X direction         		       	|metre per second squared (m/s2)	|
-|”tGravityAcc.mean...Y"  	|Mean value of the gravity acceleration signals in the Y direction     			       	|metre per second squared (m/s2)	|
-|”tGravityAcc.mean...Z"  	|Mean value of the gravity acceleration signals in the Z direction      		       	|metre per second squared (m/s2)	|
-|”tGravityAcc.std...X"   	|Standard deviation of the gravity acceleration signals in the X direction     			|metre per second squared (m/s2)	|
-|”tGravityAcc.std...Y"   	|Standard deviation of the gravity acceleration signals in the Y direction     			|metre per second squared (m/s2)	|
-|”tGravityAcc.std...Z"   	|Standard deviation of the gravity acceleration signals in the Z direction     			|metre per second squared (m/s2)	|
-|”tBodyAccJerk.mean...X" 	|Mean value of the body acceleration Jerk signals in the X direction      			|metre per second cubed (m/s3)		|
-|”tBodyAccJerk.mean...Y" 	|Mean value of the body acceleration Jerk signals in the Y direction    			|metre per second cubed (m/s3)		|	
-|”tBodyAccJerk.mean...Z" 	|Mean value of the body acceleration Jerk signals in the Z direction     			|metre per second cubed (m/s3)		|
-|”tBodyAccJerk.std...X"  	|Standard deviation of the body acceleration Jerk signals in the X direction      		|metre per second cubed (m/s3)		|
-|”tBodyAccJerk.std...Y"  	|Standard deviation of the body acceleration Jerk signals in the Y direction     		|metre per second cubed (m/s3)		|
-|”tBodyAccJerk.std...Z"  	|Standard deviation of the body acceleration Jerk signals in the Z direction    		|metre per second cubed (m/s3)		|
-|”tBodyGyro.mean...X"    	|Mean value of the body angular velocity signals in the X direction  				|radians per second (rad/s)    		|
-|”tBodyGyro.mean...Y"    	|Mean value of the the body angular velocity signals in the Y direction     			|radians per second (rad/s)		|
-|”tBodyGyro.mean...Z"    	|Mean value of body angular velocity signals in the Z direction     				|radians per second (rad/s)		|
-|”tBodyGyro.std...X"     	|Standard deviation of the body angular velocity signals in the X direction    			|radians per second (rad/s)		|
-|”tBodyGyro.std...Y"     	|Standard deviation of the body angular velocity signals in the Y direction     		|radians per second (rad/s)		|
-|”tBodyGyro.std...Z"     	|Standard deviation of the body angular velocity signals in the Z direction    			|radians per second (rad/s)		|	
-|”tBodyGyroJerk.mean...X"	|Mean value of the body angular velocity Jerk signals in the X direction      			|radians per second squared (rad/s2)	|
-|”tBodyGyroJerk.mean...Y"     	|Mean value of the body angular velocity Jerk signals in the Y direction			|radians per second squared (rad/s2)	|
-|"tBodyGyroJerk.mean...Z"       |Mean value of the body angular velocity Jerk signals in the Z direction			|radians per second squared (rad/s2)	|
-|"tBodyGyroJerk.std...X"        |Standard deviation of the body angular velocity Jerk signals in the X direction		|radians per second squared (rad/s2)	|
-|"tBodyGyroJerk.std...Y"        |Standard deviation of the body angular velocity Jerk signals in the Y direction		|radians per second squared (rad/s2)	|
-|"tBodyGyroJerk.std...Z"        |Standard deviation of the body angular velocity Jerk signals in the Z direction		|radians per second squared (rad/s2)	|
-|"tBodyAccMag.mean.."           |Mean value of the body acceleration magnitude signals						|metre per second squared (m/s2)	|
-|"tBodyAccMag.std.."            |Standard deviation of the body acceleration magnitude signals 					|metre per second squared (m/s2)	|
-|"tGravityAccMag.mean.."        |Mean value of the gravity acceleration magnitude signals					|metre per second squared (m/s2)	|
-|"tGravityAccMag.std.."         |Standard deviation of the gravity acceleration magnitude signals				|metre per second squared (m/s2)	|
-|"tBodyAccJerkMag.mean.."       |Mean value of the body acceleration Jerk magnitude signals 					|metre per second cubed (m/s3)		|
-|"tBodyAccJerkMag.std.."        |Standard deviation of the body acceleration Jerk magnitude signals				|metre per second cubed (m/s3)		|
-|”tBodyGyroMag.mean.."          |Mean value of the body angular velocity magnitude signals					|radians per second (rad/s)		|
-|”tBodyGyroMag.std.."           |Standard deviation of the body angular velocity magnitude signals				|radians per second (rad/s)		|
-|"tBodyGyroJerkMag.mean.."      |Mean value of the body angular velocity Jerk magnitude signals					|radians per second squared (rad/s2)	|
-|"tBodyGyroJerkMag.std.."       |Standard deviation of the body angular velocity Jerk magnitude signals				|radians per second squared (rad/s2)	|
-|"fBodyAcc.mean...X"            |Mean value of the body acceleration frequency signals in the X direction			|metre per second squared (m/s2)	|
-|"fBodyAcc.mean...Y"            |Mean value of the body acceleration frequency signals in the Y direction			|metre per second squared (m/s2)	|
-|"fBodyAcc.mean...Z"            |Mean value of the body acceleration frequency signals in the Z direction			|metre per second squared (m/s2)	|
-|"fBodyAcc.std...X"             |Standard deviation of the body acceleration frequency signals in the X direction		|metre per second squared (m/s2)	|
-|"fBodyAcc.std...Y"             |Standard deviation of the body acceleration frequency signals in the Y direction		|metre per second squared (m/s2)	|
-|"fBodyAcc.std...Z"             |Standard deviation of the body acceleration frequency signals in the Z direction		|metre per second squared (m/s2)	|
-|"fBodyAccJerk.mean...X"        |Mean value of the body acceleration Jerk frequency signals in the X direction			|metre per second cubed (m/s3)		|
-|"fBodyAccJerk.mean...Y"        |Mean value of the body acceleration Jerk frequency signals in the Y direction			|metre per second cubed (m/s3)		|
-|"fBodyAccJerk.mean...Z"        |Mean value of the body acceleration Jerk frequency signals in the Z direction			|metre per second cubed (m/s3)		|
-|"fBodyAccJerk.std...X"         |Standard deviation of the body acceleration Jerk frequency signals in the X direction		|metre per second cubed (m/s3)		|
-|"fBodyAccJerk.std...Y"         |Standard deviation of the body acceleration Jerk frequency signals in the Y direction		|metre per second cubed (m/s3)		|
-|"fBodyAccJerk.std...Z"         |Standard deviation of the body acceleration Jerk frequency signals in the Z direction		|metre per second cubed (m/s3)		|
-|"fBodyGyro.mean...X"           |Mean value of the body angular velocity frequency signals in the X direction			|radians per second (rad/s)		|
-|"fBodyGyro.mean...Y"           |Mean value of the body angular velocity frequency signals in the Y direction			|radians per second (rad/s)		|
-|"fBodyGyro.mean...Z"           |Mean value of the body angular velocity frequency signals in the Z direction			|radians per second (rad/s)		|
-|"fBodyGyro.std...X"            |Standard deviation of the body angular velocity frequency signals in the X direction		|radians per second (rad/s)		|
-|"fBodyGyro.std...Y"            |Standard deviation of the body angular velocity frequency signals in the Y direction		|radians per second (rad/s)		|
-|"fBodyGyro.std...Z"            |Standard deviation of the body angular velocity frequency signals in the Z direction		|radians per second (rad/s)		|
-|"fBodyAccMag.mean.."           |Mean value of the body acceleration magnitude frequency signals				|metre per second squared (m/s2)	|
-|"fBodyAccMag.std.."            |Standard deviation of the body acceleration magnitude frequency signals			|metre per second squared (m/s2)	|
-|"fBodyBodyAccJerkMag.mean.."   |Mean value of the body acceleration Jerk magnitude frequency signals				|metre per second cubed (m/s3)		|
-|"fBodyBodyAccJerkMag.std.."    |Standard deviation of the body acceleration Jerk magnitude frequency signals			|metre per second cubed (m/s3)		|
-|"fBodyBodyGyroMag.mean.."      |Mean value of the body angular velocity magnitude frequency signals				|radians per second (rad/s)		|
-|"fBodyBodyGyroMag.std.."       |Standard deviation of the body angular velocity magnitude frequency signals			|radians per second (rad/s)		|
-|"fBodyBodyGyroJerkMag.mean.."  |Mean value of the body angular velocity Jerk frequency signals					|radians per second squared (rad/s2)	|
-|"fBodyBodyGyroJerkMag.std.."   |Standard deviation of the body angular velocity Jerk frequency signals				|radians per second squared (rad/s2)	|
+VARIABLES | DESCRIPTION | UNIT
+--- | --- | ---
+”activity" | The measured activity (LAYING,SITTING,STANDING,WALKING,WALKING_DOWNSTAIRS,WALKING_UPSTAIRS) | 
+”subject" |The volunteer’s number between 1 to 30 for the experiments | 
+”tBodyAcc.mean...X" | Mean value of the body acceleration signals in the X direction | metre per second squared (m/s2)
+”tBodyAcc.mean...Y" | Mean value of the body acceleration signals in the Y direction | metre per second squared (m/s2)
+”tBodyAcc.mean...Z" | Mean value of the body acceleration signals in the Z direction | metre per second squared (m/s2)
+”tBodyAcc.std...X" | Standard deviation of the body acceleration signals in the X direction | metre per second squared (m/s2)
+”tBodyAcc.std...Y" | Standard deviation of the body acceleration signals in the Y direction | metre per second squared (m/s2)
+”tBodyAcc.std...Z" | Standard deviation of the body acceleration signals in the Z direction | metre per second squared (m/s2)
+”tGravityAcc.mean...X" | Mean value of the gravity acceleration signals in the X direction | metre per second squared (m/s2)
+”tGravityAcc.mean...Y" | Mean value of the gravity acceleration signals in the Y direction | metre per second squared (m/s2)
+”tGravityAcc.mean...Z" | Mean value of the gravity acceleration signals in the Z direction | metre per second squared (m/s2)
+”tGravityAcc.std...X" | Standard deviation of the gravity acceleration signals in the X direction | metre per second squared (m/s2)
+”tGravityAcc.std...Y" | Standard deviation of the gravity acceleration signals in the Y direction | metre per second squared (m/s2)
+”tGravityAcc.std...Z" | Standard deviation of the gravity acceleration signals in the Z direction | metre per second squared (m/s2)
+”tBodyAccJerk.mean...X" | Mean value of the body acceleration Jerk signals in the X direction | metre per second cubed (m/s3)
+”tBodyAccJerk.mean...Y" | Mean value of the body acceleration Jerk signals in the Y direction | metre per second cubed (m/s3)	
+”tBodyAccJerk.mean...Z" | Mean value of the body acceleration Jerk signals in the Z direction | metre per second cubed (m/s3)
+”tBodyAccJerk.std...X" | Standard deviation of the body acceleration Jerk signals in the X direction | metre per second cubed (m/s3)
+”tBodyAccJerk.std...Y" | Standard deviation of the body acceleration Jerk signals in the Y direction | metre per second cubed (m/s3)
+”tBodyAccJerk.std...Z" | Standard deviation of the body acceleration Jerk signals in the Z direction | metre per second cubed (m/s3)
+”tBodyGyro.mean...X" | Mean value of the body angular velocity signals in the X direction | radians per second (rad/s)
+”tBodyGyro.mean...Y" | Mean value of the the body angular velocity signals in the Y direction | radians per second (rad/s)
+”tBodyGyro.mean...Z" | Mean value of body angular velocity signals in the Z direction | radians per second (rad/s)
+”tBodyGyro.std...X" | Standard deviation of the body angular velocity signals in the X direction | radians per second (rad/s)
+”tBodyGyro.std...Y" | Standard deviation of the body angular velocity signals in the Y direction | radians per second (rad/s)
+”tBodyGyro.std...Z" | Standard deviation of the body angular velocity signals in the Z direction | radians per second (rad/s)	
+”tBodyGyroJerk.mean...X" | Mean value of the body angular velocity Jerk signals in the X direction | radians per second squared (rad/s2)
+”tBodyGyroJerk.mean...Y" | Mean value of the body angular velocity Jerk signals in the Y direction | radians per second squared (rad/s2)
+"tBodyGyroJerk.mean...Z" | Mean value of the body angular velocity Jerk signals in the Z direction | radians per second squared (rad/s2)
+"tBodyGyroJerk.std...X" | Standard deviation of the body angular velocity Jerk signals in the X direction | radians per second squared (rad/s2)
+"tBodyGyroJerk.std...Y" | Standard deviation of the body angular velocity Jerk signals in the Y direction | radians per second squared (rad/s2)
+"tBodyGyroJerk.std...Z" | Standard deviation of the body angular velocity Jerk signals in the Z direction |radians per second squared (rad/s2)
+"tBodyAccMag.mean.." | Mean value of the body acceleration magnitude signals | metre per second squared (m/s2)
+"tBodyAccMag.std.." | Standard deviation of the body acceleration magnitude signals | metre per second squared (m/s2)
+"tGravityAccMag.mean.." | Mean value of the gravity acceleration magnitude signals | metre per second squared (m/s2)
+"tGravityAccMag.std.." | Standard deviation of the gravity acceleration magnitude signals | metre per second squared (m/s2)
+"tBodyAccJerkMag.mean.." | Mean value of the body acceleration Jerk magnitude signals | metre per second cubed (m/s3)
+"tBodyAccJerkMag.std.." | Standard deviation of the body acceleration Jerk magnitude signals | metre per second cubed (m/s3)
+”tBodyGyroMag.mean.." | Mean value of the body angular velocity magnitude signals | radians per second (rad/s)
+”tBodyGyroMag.std.." | Standard deviation of the body angular velocity magnitude signals | radians per second (rad/s)
+"tBodyGyroJerkMag.mean.." | Mean value of the body angular velocity Jerk magnitude signals | radians per second squared (rad/s2)
+"tBodyGyroJerkMag.std.." | Standard deviation of the body angular velocity Jerk magnitude signals | radians per second squared (rad/s2)
+"fBodyAcc.mean...X" | Mean value of the body acceleration frequency signals in the X direction | metre per second squared (m/s2)
+"fBodyAcc.mean...Y" | Mean value of the body acceleration frequency signals in the Y direction | metre per second squared (m/s2)
+"fBodyAcc.mean...Z" | Mean value of the body acceleration frequency signals in the Z direction | metre per second squared (m/s2)
+"fBodyAcc.std...X" | Standard deviation of the body acceleration frequency signals in the X direction | metre per second squared (m/s2)
+"fBodyAcc.std...Y" | Standard deviation of the body acceleration frequency signals in the Y direction | metre per second squared (m/s2)
+"fBodyAcc.std...Z" | Standard deviation of the body acceleration frequency signals in the Z direction | metre per second squared (m/s2)
+"fBodyAccJerk.mean...X" | Mean value of the body acceleration Jerk frequency signals in the X direction | metre per second cubed (m/s3)
+"fBodyAccJerk.mean...Y" | Mean value of the body acceleration Jerk frequency signals in the Y direction | metre per second cubed (m/s3)
+"fBodyAccJerk.mean...Z" | Mean value of the body acceleration Jerk frequency signals in the Z direction | metre per second cubed (m/s3)
+"fBodyAccJerk.std...X" | Standard deviation of the body acceleration Jerk frequency signals in the X direction | metre per second cubed (m/s3)
+"fBodyAccJerk.std...Y" | Standard deviation of the body acceleration Jerk frequency signals in the Y direction | metre per second cubed (m/s3)
+"fBodyAccJerk.std...Z" | Standard deviation of the body acceleration Jerk frequency signals in the Z direction | metre per second cubed (m/s3)
+"fBodyGyro.mean...X" | Mean value of the body angular velocity frequency signals in the X direction | radians per second (rad/s)
+"fBodyGyro.mean...Y" | Mean value of the body angular velocity frequency signals in the Y direction | radians per second (rad/s)
+"fBodyGyro.mean...Z" | Mean value of the body angular velocity frequency signals in the Z direction | radians per second (rad/s)
+"fBodyGyro.std...X" | Standard deviation of the body angular velocity frequency signals in the X direction | radians per second (rad/s)
+"fBodyGyro.std...Y" | Standard deviation of the body angular velocity frequency signals in the Y direction | radians per second (rad/s)
+"fBodyGyro.std...Z" | Standard deviation of the body angular velocity frequency signals in the Z direction | radians per second (rad/s)
+"fBodyAccMag.mean.." | Mean value of the body acceleration magnitude frequency signals | metre per second squared (m/s2)
+"fBodyAccMag.std.." | Standard deviation of the body acceleration magnitude frequency signals | metre per second squared (m/s2)
+"fBodyBodyAccJerkMag.mean.." | Mean value of the body acceleration Jerk magnitude frequency signals | metre per second cubed (m/s3)
+"fBodyBodyAccJerkMag.std.." | Standard deviation of the body acceleration Jerk magnitude frequency signals | metre per second cubed (m/s3)
+"fBodyBodyGyroMag.mean.." | Mean value of the body angular velocity magnitude frequency signals | radians per second (rad/s)
+"fBodyBodyGyroMag.std.." | Standard deviation of the body angular velocity magnitude frequency signals | radians per second (rad/s)
+"fBodyBodyGyroJerkMag.mean.." | Mean value of the body angular velocity Jerk frequency signals | radians per second squared (rad/s2)
+"fBodyBodyGyroJerkMag.std.." | Standard deviation of the body angular velocity Jerk frequency signals | radians per second squared (rad/s2)
 
